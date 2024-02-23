@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SushiFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6G-nW-QNH">
+                                <rect key="frame" x="16" y="59" width="51" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="XWq-7a-TEv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="uYH-G2-dJu"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="line.3.horizontal.decrease" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRE-Us-P4d">
+                                <rect key="frame" x="323" y="59" width="54" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Eo2-N7-kbv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="sQ6-wj-EMn"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="basket.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sushi Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3u-TN-13W">
+                                <rect key="frame" x="16" y="102" width="361" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovO-cP-7ga">
+                                <rect key="frame" x="16" y="158" width="361" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k3u-TN-13W" secondAttribute="trailing" constant="16" id="9G3-oj-ZCh"/>
+                            <constraint firstItem="k3u-TN-13W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="B6f-Bw-xfg"/>
+                            <constraint firstItem="ovO-cP-7ga" firstAttribute="top" secondItem="k3u-TN-13W" secondAttribute="bottom" constant="8" symbolic="YES" id="CpK-vY-Kum"/>
+                            <constraint firstItem="ovO-cP-7ga" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="N2E-lr-MBT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bRE-Us-P4d" secondAttribute="trailing" id="ORg-SW-yVA"/>
+                            <constraint firstItem="k3u-TN-13W" firstAttribute="top" secondItem="W6G-nW-QNH" secondAttribute="bottom" constant="8" symbolic="YES" id="Zg1-iH-hjU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ovO-cP-7ga" secondAttribute="trailing" constant="16" id="Zlo-4Q-EMx"/>
+                            <constraint firstItem="ovO-cP-7ga" firstAttribute="top" secondItem="k3u-TN-13W" secondAttribute="bottom" constant="8" symbolic="YES" id="eOx-40-KfL"/>
+                            <constraint firstItem="bRE-Us-P4d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fVM-B6-DDO"/>
+                            <constraint firstItem="W6G-nW-QNH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fu3-Tl-PFL"/>
+                            <constraint firstItem="bRE-Us-P4d" firstAttribute="leading" secondItem="W6G-nW-QNH" secondAttribute="trailing" constant="256" id="ut7-xO-mqy"/>
+                            <constraint firstItem="W6G-nW-QNH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zUM-M7-HHT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="delivery" destination="ovO-cP-7ga" id="2p5-M2-hSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="-301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="basket.fill" catalog="system" width="128" height="108"/>
+        <image name="line.3.horizontal.decrease" catalog="system" width="128" height="73"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
